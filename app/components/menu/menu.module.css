@@ -1,0 +1,110 @@
+.nav {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0 20px;
+}
+.nav_img1 {
+  position: absolute;
+  left: -17px;
+  top: 8px;
+}
+.nav_img2 {
+  position: absolute;
+  left: 173.65px;
+  top: 19.13px;
+}
+
+.hamburguer {
+  display: block;
+  cursor: pointer;
+  border-radius: 5.14px;
+  border: 0.86px solid rgba(25, 32, 36, 0.6);
+  width: 36px;
+  height: 34.26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5px;
+  margin-left: auto;
+}
+
+.line {
+  width: 12.55px;
+  border: 1.56909px solid #000000;
+  border-radius: 5px;
+}
+.options {
+  position: absolute;
+  width: 258.4px;
+  height: 0;
+  right: 20px;
+  top: 56px;
+  background: #ffffff;
+  border-radius: 7.83019px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+}
+.nav_item {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    height: 50%;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 17px;
+  }
+.options.active {
+    height: 83px;
+    border: 1.57px solid #999999;
+    border-radius: 7.83019px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav{
+    padding: 0;
+  }
+  .hamburguer{
+    display: none;
+  }
+  .nav_img1 {
+    position: absolute;
+    left: 29px;
+  }
+  .nav_img2 {
+    position: absolute;
+    left: 219.65px;
+    top: 19.13px;
+  }
+  .options {
+    position: initial;
+    width: auto;
+    height: 100%;
+    border-radius: 0;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-left: 379px;
+    gap: 20px;
+  }
+  .nav_item {
+    display: flex;
+    width: 152px;
+    height: 50%;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+
+
+}
