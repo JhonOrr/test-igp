@@ -6,7 +6,7 @@ export default function Geovisor() {
   const Map = useMemo(() => dynamic(
     () => import('./components/Map'),
     { 
-      loading: () => <p>A map is loading</p>,
+      loading: () => <p></p>,
       ssr: false
     }
   ), [])
