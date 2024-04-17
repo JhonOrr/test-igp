@@ -7,6 +7,7 @@ import logoIgp from "/public/logoIgp.png";
 import homeIcon from "/public/homeIcon.png";
 import worldIcon from "/public/worldIcon.png";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function menu() {
   const [isActive, setIsActive] = useState(false);
@@ -25,9 +26,11 @@ export default function menu() {
       </div>
       <div className={`${styles.options} ${isActive ? styles.active : ""}`}>
         <div className={styles.nav_item}>
-          <Image src={homeIcon} height={17} className={styles.img} />
-          <p>Acerca de CDS</p>
+            <Image src={homeIcon} height={17} className={styles.img} />
+            <p><Link href='/'>Acerca de CDS</Link></p>
         </div>
+
+
         <div className={styles.nav_item}>
           <Image
             src={worldIcon}
@@ -35,7 +38,7 @@ export default function menu() {
             width={16.67}
             className={styles.img}
           />
-          <p>Geovisor CDS</p>
+          <p><Link href='/geovisor'>Geovisor CDS</Link></p>
         </div>
       </div>
       {/* <div className={styles.nav_item}>

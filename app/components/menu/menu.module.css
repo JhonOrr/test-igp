@@ -52,7 +52,6 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-
 }
 .nav_item {
     display: flex;
@@ -94,7 +93,7 @@
     box-sizing: border-box;
     flex-direction: row;
     margin-left: 379px;
-    gap: 20px;
+    gap: 60px;
   }
   .nav_item {
     display: flex;
