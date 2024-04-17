@@ -9,7 +9,5 @@
 
 @media screen and (min-width: 768px) {
   .main {
-    padding: 44px 61px;
-    justify-content: start;
   }
 }
