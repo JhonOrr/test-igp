@@ -1,18 +1,15 @@
 .main {
   flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 10px;
+  z-index: -1;
 }
 
-.map { height: 180px; }
+.map {
+  height: 180px;
+}
 
 @media screen and (min-width: 768px) {
-  .main{
+  .main {
     padding: 44px 61px;
     justify-content: start;
   }
 }
-
-

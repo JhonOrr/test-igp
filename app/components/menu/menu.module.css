@@ -54,25 +54,25 @@
   box-sizing: border-box;
 }
 .nav_item {
-    display: flex;
-    width: 100%;
-    gap: 15px;
-    height: 50%;
-    align-items: center;
-    box-sizing: border-box;
-    padding-left: 17px;
-  }
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  height: 50%;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 17px;
+}
 .options.active {
-    height: 83px;
-    border: 1.57px solid #999999;
-    border-radius: 7.83019px;
+  height: 83px;
+  border: 1.57px solid #999999;
+  border-radius: 7.83019px;
 }
 
 @media screen and (min-width: 768px) {
-  .nav{
+  .nav {
     padding: 0;
   }
-  .hamburguer{
+  .hamburguer {
     display: none;
   }
   .nav_img1 {
@@ -103,7 +103,4 @@
     box-sizing: border-box;
     padding: 0;
   }
-
-
-
 }
