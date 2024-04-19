@@ -25,35 +25,16 @@ export default function menu() {
         <div className={styles.line}></div>
       </div>
       <div className={`${styles.options} ${isActive ? styles.active : ""}`}>
-        <div className={styles.nav_item}>
-            <Image src={homeIcon} height={17} className={styles.img} />
-            <p><Link href='/'>Acerca de CDS</Link></p>
-        </div>
+        <Link href="/" className={styles.nav_item}>
+          <Image src={homeIcon} height={17} className={styles.img} />
+          <p>Acerca de CDS</p>
+        </Link>
 
-
-        <div className={styles.nav_item}>
-          <Image
-            src={worldIcon}
-            height={16.67}
-            width={16.67}
-            className={styles.img}
-          />
-          <p><Link href='/geovisor'>Geovisor CDS</Link></p>
-        </div>
+        <Link href="/geovisor" className={styles.nav_item}>
+          <Image src={worldIcon} height={16.67} className={styles.img} />
+          <p>Geovisor CDS</p>
+        </Link>
       </div>
-      {/* <div className={styles.nav_item}>
-        <Image src={homeIcon} height={17} className={styles.img} />
-        <p>Acerca de CDS</p>
-      </div>
-      <div className={styles.nav_item}>
-        <Image
-          src={worldIcon}
-          height={16.67}
-          width={16.67}
-          className={styles.img}
-        />
-        <p>Geovisor CDS</p>
-      </div> */}
     </nav>
   );
 }

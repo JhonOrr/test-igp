@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <main className={styles.mainContainer}>
-          <Menu />
+          <Menu/>
           {children}
         </main>
       </body>

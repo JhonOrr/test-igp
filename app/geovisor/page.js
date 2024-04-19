@@ -2,6 +2,7 @@
 import { useMemo } from "react";
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";
+import Card from "./components/card";
 
 export default function Geovisor() {
   const Map = useMemo(
@@ -10,12 +11,17 @@ export default function Geovisor() {
         loading: () => <p></p>,
         ssr: false,
       }),
-    [],
+    []
   );
 
   return (
-    <div className={styles.main}>
-      <Map />
+    <div className={styles.super}>
+      <div className={styles.card}>
+        <Card/>
+      </div>
+      <div className={styles.main}>
+          <Map />
+      </div>
     </div>
   );
 }
