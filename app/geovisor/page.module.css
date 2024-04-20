@@ -1,9 +1,10 @@
 .super{
   flex-grow: 1;
-  height: auto;
+  /* height: auto; */
   border: 1px solid red;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 .main {
@@ -11,19 +12,26 @@
   z-index: 0;
   width: 100%;
   height: 100%;
+
 }
 
 .card{
   position: absolute;
-  top:0;
+  top: 11px;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   z-index: 1;
-  pointer-events: none
+  pointer-events: none;
+  transition: 0.5s;
 }
+
+.card.active{
+  height: 200px;
+  top:530px;
+  transition: 0.5s;
+}  
 
 @media screen and (min-width: 768px) {
   .main {

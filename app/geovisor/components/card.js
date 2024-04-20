@@ -1,9 +1,13 @@
-import styles from './card.module.css'
+"use client";
+import styles from './card.module.css';
+import { useState } from 'react';
 
 export default function Card() {
+  
   return(
     <main className={styles.main}>
-        144425252525
+      <div className={styles.symbol}>
+      </div>  
     </main>
-  )
+  ) 
 }
